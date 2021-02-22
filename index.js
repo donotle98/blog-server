@@ -6,7 +6,7 @@ require('dotenv').config();
 //connect to mongodb
 const dbURI = `mongodb+srv://donole:${DB_PW}@cluster0.2ke1l.mongodb.net/blog-site?retryWrites=true&w=majority`;
 mongoose
-    .connect(process.env.MONGODB_URI || dbURI, {
+    .connect(process.env.MONGO_URI || dbURI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
