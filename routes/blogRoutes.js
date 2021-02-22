@@ -24,6 +24,10 @@ router.post('/add-blog', async (req, res) => {
     }
 });
 
+router.get('/', (req, res) => {
+    res.json('GETTING BLOGS');
+});
+
 router.get('/all-blogs', async (req, res) => {
     try {
         const data = await Blog.find();
